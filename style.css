@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #0D192C;
+    font-family: 'Outfit', sans-serif;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteiner {
+    background: #15263F;
+    box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.0952917);
+    border-radius: 15px;
+    width: 350px;
+    height: 596px;
+    padding: 24px;
+}
+
+.card {
+    position: relative;
+}
+
+.image {
+    display: flex;
+    width: 302px;
+    height: 302px;
+    border-radius: 8px;
+}
+
+.view-icon {
+    position: absolute;
+    display: none;
+}
+
+.view {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    mix-blend-mode: normal;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.overlay {
+    opacity: 0;
+}
+
+.view-icon {
+    display: block;
+}
+
+.card:hover .overlay {
+    opacity: 1;
+}
+
+.card:hover .view {
+    background: rgba(0, 255, 247, 0.5);
+}
+
+.heading h3 {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 28px;
+    color: #FFFFFF;
+    margin-top: 24px;
+    margin-bottom: 16px;
+}
+
+.heading:hover h3{
+    color: #00FFF8;
+    cursor: pointer;
+}
+
+.conteiner p {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 26px;
+    color: #8BACD9;
+    margin-bottom: 24px;
+}
+
+.card-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.ethereum {
+    display: flex;
+    gap: 9px;
+}
+
+.ethereum span {
+    font-weight: 600;
+    line-height: 20px;
+    color: #00FFF8;
+}
+
+.time {
+    display: flex;
+    gap: 8px;
+}
+
+.time span {
+    font-weight: 400;
+    line-height: 20px;
+    color: #8BACD9;
+}
+
+.line {
+    height: 1px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    background: #2E405A;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile img {
+    width: 33px;
+    height: 33px;
+    border: 1px solid #FFFFFF;
+    border-radius: 50%;
+}
+
+.profile span {
+    font-weight: 400;
+    line-height: 20px;
+    color: #8BACD9;
+    margin-left: 16px;
+    margin-right: 5px;
+}
+
+.profile a {
+    font-weight: 400;
+    line-height: 20px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.profile:hover a {
+    color: #00FFF8;
+}
