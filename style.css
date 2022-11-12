@@ -33,11 +33,6 @@ body {
     border-radius: 8px;
 }
 
-.view-icon {
-    position: absolute;
-    display: none;
-}
-
 .view {
     display: flex;
     justify-content: center;
@@ -54,10 +49,6 @@ body {
 
 .overlay {
     opacity: 0;
-}
-
-.view-icon {
-    display: block;
 }
 
 .card:hover .overlay {
